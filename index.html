@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Integrador - Mi Página Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Encabezado y Menú de navegación -->
+  <header>
+    <h1>Nombre de tu Proyecto</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#seccion1">Sección 1</a></li>
+        <li><a href="#seccion2">Sección 2</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <!-- Funcionalidad JS 1: Botón Modo Oscuro -->
+      <button id="btn-tema" class="btn">🌙 Modo Oscuro</button>
+    </nav>
+  </header>
+
+  <!-- Sección Principal (Hero) -->
+  <main id="inicio" class="hero">
+    <h2>Bienvenido a nuestra página web</h2>
+    <p>Este proyecto tiene como finalidad informar y presentar contenido sobre nuestro tema elegido.</p>
+    <a href="#seccion1" class="btn">Explorar contenido</a>
+  </main>
+
+  <!-- Sección de Contenido 1 -->
+  <section id="seccion1" class="contenedor">
+    <h2>Primera Sección de Contenido</h2>
+    <div class="tarjetas">
+      <article class="tarjeta">
+        <img src="https://picsum.photos/300/200?random=1" alt="Imagen ilustrativa 1">
+        <h3>Elemento 1</h3>
+        <p>Breve descripción sobre este primer punto importante del tema elegido.</p>
+      </article>
+      <article class="tarjeta">
+        <img src="https://picsum.photos/300/200?random=2" alt="Imagen ilustrativa 2">
+        <h3>Elemento 2</h3>
+        <p>Breve descripción sobre este segundo punto importante del tema elegido.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Sección de Contenido 2 (con Funcionalidad JS 2: Mostrar/Ocultar info) -->
+  <section id="seccion2" class="contenedor">
+    <h2>Segunda Sección: Datos Curiosos</h2>
+    <p>Hacé clic en el botón para desplegar información adicional sobre el tema.</p>
+    <button id="btn-info" class="btn">Ver más información</button>
+    <div id="info-extra" class="oculto">
+      <p>¡Acá va el dato extra o la explicación ampliada que aparece gracias a JavaScript!</p>
+    </div>
+  </section>
+
+  <!-- Sección de Contenido 3 -->
+  <section id="contacto" class="contenedor">
+    <h2>Tercera Sección: Sobre Nosotros / Contacto</h2>
+    <p>Proyecto realizado en grupo para la materia. Podés escribirnos o dejarnos tu consulta.</p>
+    <img src="https://picsum.photos/600/250?random=3" alt="Banner de cierre" class="img-ancha">
+  </section>
+
+  <!-- Pie de página (Footer) -->
+  <footer>
+    <p>Proyecto Integrador - Desarrollado por: [Nombres de los integrantes del grupo]</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
